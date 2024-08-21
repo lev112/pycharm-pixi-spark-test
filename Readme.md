@@ -1,0 +1,1 @@
+reproduce the bug reported in https://github.com/prefix-dev/pixi/issues/1869
