@@ -1,0 +1,18 @@
+[project]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "pixi_example"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+
+[dependencies]
+python = ">=3.10, <3.11"
+pixi-pycharm = "*"
+
+[pypi-dependencies]
+pyspark = "==3.4.3"
+pytest = "*"
+xxhash = "*"
+
+
