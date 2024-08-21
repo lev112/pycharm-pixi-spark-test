@@ -9,6 +9,8 @@ version = "0.1.0"
 [dependencies]
 python = ">=3.10, <3.11"
 pixi-pycharm = "*"
+openjdk = ">=11.0.0,<12"
+
 
 [pypi-dependencies]
 pyspark = "==3.4.3"

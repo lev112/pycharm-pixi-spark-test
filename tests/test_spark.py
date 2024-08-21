@@ -1,3 +1,5 @@
+import os
+
 import xxhash
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import udf
@@ -9,7 +11,11 @@ def to_xxhash(x: int) -> str:
 
     return hashed
 
+
 def test_spark():
+    java_home = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", ".pixi/envs/default/lib/jvm"))
+    os.environ["JAVA_HOME"] = java_home
+
     spark = (
         SparkSession.builder.appName("spark test")
         .master("local[1]")
@@ -18,4 +24,4 @@ def test_spark():
 
     my_udf = udf(to_xxhash, returnType=StringType())
 
-    spark.range(1,5).withColumn("id", my_udf("id")).show()
+    spark.range(1, 5).withColumn("id", my_udf("id")).show()

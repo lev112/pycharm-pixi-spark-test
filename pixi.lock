@@ -13,6 +13,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.46.0-hfb93653_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.1-hfb2fe0b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.5-hb89a1cb_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-11.0.23-h8f67a1f_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.3.1-hfb2fe0b_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pixi-pycharm-0.0.6-unix_1234567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/python-3.10.14-h2469fbe_0_cpython.conda
@@ -131,6 +132,22 @@ packages:
   purls: []
   size: 795131
   timestamp: 1715194898402
+- kind: conda
+  name: openjdk
+  version: 11.0.23
+  build: h8f67a1f_1
+  build_number: 1
+  subdir: osx-arm64
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-11.0.23-h8f67a1f_1.conda
+  sha256: 9a99c67336f3e185f5d37f36d9162dad2b764d3dbd529fc8411e0d4263a6fffe
+  md5: ae34d64786edd31114fdf6d7dfb13457
+  depends:
+  - libzlib >=1.3.1,<2.0a0
+  license: GPL-2.0-or-later WITH Classpath-exception-2.0
+  license_family: GPL
+  purls: []
+  size: 164401203
+  timestamp: 1721718488848
 - kind: conda
   name: openssl
   version: 3.3.1
